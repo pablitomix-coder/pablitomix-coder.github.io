@@ -1,0 +1,221 @@
+html {
+    font-size: 62.5%;
+    /** 1REM = 10pX **/
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+/*======================= Elementos Globales =================  */
+
+body {
+    background: #870000;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #190A05, #870000);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #190A05, #870000);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #FAFAFA;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 1.5rem;
+}
+
+h1 {
+    font-size: 3.4rem;
+}
+
+h2 {
+    font-size: 3rem;
+    padding-top: 1rem;
+}
+
+h3 {
+    font-size: 2.6rem;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Cinzel', serif;
+    font-size: 2.2rem;
+}
+
+p {
+    font-family: 'Martel', serif;
+    text-align: justify;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+
+/*======================= Utilidades =================  */
+
+.conteiner {
+    padding: 0 3rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.fondo {
+    padding: 0 2rem 1rem 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+}
+
+.padding-bottom {
+    padding-bottom: 2rem;
+}
+
+@media (min-width: 700px) {
+    .conteiner {
+        padding: 0 8rem;
+    }
+}
+
+
+/*======================= header =================  */
+
+.nav {
+    background-color: #0D1948;
+}
+
+#menu {
+    display: none;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.nav a {
+    font-weight: 900;
+    color: white;
+    margin-left: 2rem;
+}
+
+.nav li:hover {
+    background: #48BFE3;
+}
+
+#icon {
+    font-size: 3rem;
+    margin-left: 2.2rem;
+}
+
+@media (min-width: 700px) {
+    .nav {
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .nav li:hover {
+        background: none;
+    }
+    .nav a:hover {
+        background: #48BFE3;
+        padding: 1rem 2rem;
+        border-radius: 4rem;
+    }
+    #menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #icon {
+        display: none;
+    }
+}
+
+
+/*======================= header =================  */
+
+#img-div {
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+}
+
+#image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    padding-top: 10px;
+    max-width: 100%;
+}
+
+#img-caption {
+    background: linear-gradient(#1aa7ec, #1e2f97);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom-right-radius: 2rem;
+}
+
+#img-caption p {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+#main h3 {
+    padding-top: 3rem;
+}
+
+@media (min-width: 700px) {
+    #img-div {
+        width: 40%;
+        height: 40%;
+    }
+}
+
+
+/*============================= Manga ======================  */
+
+#tribute-info figure {
+    width: 70%;
+    height: 70%;
+    margin: 0 auto;
+}
+
+#tribute-info h5 {
+    font-size: 2.5rem;
+}
+
+#tribute-info a {
+    color: white;
+    font-size: 1.8rem;
+    margin: 1rem;
+    background: linear-gradient(#1e2f97, #48BFE3);
+}
+
+@media (min-width: 700px) {
+    #tribute-info figure {
+        width: 40%;
+        height: 40%;
+    }
+}
+
+
+/*======================= Estudio Animacion =================  */
+
+.logo {
+    width: 40%;
+    height: 40%;
+    display: block;
+    margin: 0 auto;
+}
